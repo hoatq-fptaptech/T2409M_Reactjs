@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
         <Header />  
-        <Product price={15}/>
-        <Product price={20}/>
+        <Product name="Iphone 15" price={15}/>
+        <Product name="Iphone 16" price={20}/>
     </div>
   );
 }
