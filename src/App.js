@@ -1,14 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/header/Header';
-import Product from './components/product/Product';
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/header/Header";
+import Features from "./pages/features/Features";
+import Home from "./pages/home/Home";
+import Pricing from "./pages/pricing/Pricing";
+
 
 function App() {
   return (
     <div className="App">
-        <Header />  
-        <Product name="Iphone 15" price={15}/>
-        <Product name="Iphone 16" price={20}/>
+        <Header/>
+        <Routes>
+          <Route path="/" Component={Home} />
+          <Route path="/features" Component={Features} />
+          <Route path="/pricing" Component={Pricing} />
+        </Routes>
     </div>
   );
 }
