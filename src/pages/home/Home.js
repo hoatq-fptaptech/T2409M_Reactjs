@@ -1,9 +1,16 @@
+import { Col, Container, Row } from "react-bootstrap";
+
 export default function Home(){
     return (
         <section>
-            <div className="container">
-                <h1>Home page ...</h1>
-            </div>
+            <Container>
+                <Row>
+                    <Col xs={6}>
+                    AAAA
+                    </Col>
+                    <Col>BBBB</Col>
+                </Row>
+            </Container>
         </section>
     )
 }
